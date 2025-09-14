@@ -1,16 +1,24 @@
 # Schema Mapper & Data Quality Fixer
 
-A production-ready Streamlit application that automatically maps messy CSV headers to a canonical schema and fixes data quality issues with intelligent suggestions and learning capabilities.
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)  
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)  
+![License](https://img.shields.io/badge/License-MIT-green)
+
+A production-ready **Streamlit application** that automatically maps messy CSV headers to a canonical schema and fixes data quality issues with intelligent suggestions and learning capabilities.
+
+---
 
 ## 🚀 Features
 
-- **Intelligent Header Mapping**: Automatically suggests mappings between input CSV headers and canonical schema fields using multiple similarity algorithms
+- **Intelligent Header Mapping**: Automatically suggests mappings between input CSV headers and canonical schema fields using similarity algorithms
 - **Deterministic Data Cleaning**: Automated cleaning and validation for phone numbers, emails, dates, currencies, postal codes, and more
 - **Before/After Analytics**: Visual comparison of data quality metrics with interactive charts
-- **Targeted Fix Suggestions**: AI-powered suggestions for remaining data quality issues
+- **Targeted Fix Suggestions**: Smart suggestions for remaining data quality issues (typos, invalid formats, missing codes)
 - **Learning System**: Promotes and remembers successful fixes for future automatic application
 - **Interactive UI**: Clean, intuitive Streamlit interface with step-by-step workflow
-- **Production Ready**: Modular architecture, comprehensive error handling, and unit tests
+- **Production Ready**: Modular architecture, JSON persistence, error handling, and tests
+
+---
 
 ## 📁 Project Structure
 
@@ -38,6 +46,8 @@ project6_schema_mapper/
 └── README.md
 ```
 
+---
+
 ## 🛠️ Installation & Setup
 
 1. **Clone the repository:**
@@ -62,7 +72,22 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-The app will be available at `http://localhost:8501`
+The app will be available at **http://localhost:8501**
+
+---
+
+## ☁️ Deployment
+
+To deploy on **Streamlit Cloud**:
+
+1. Push your code and datasets to GitHub.  
+2. Go to [Streamlit Cloud](https://share.streamlit.io/) and connect your repo.  
+3. Set the entrypoint as `app.py`.  
+4. Ensure `requirements.txt` is included.  
+
+That’s it — the app will be live on your Streamlit Cloud URL.
+
+---
 
 ## 📊 Usage Workflow
 
@@ -72,177 +97,109 @@ The app will be available at `http://localhost:8501`
 
 ### Step 2: Header Mapping
 - Review auto-generated header mappings with confidence scores
-- Override mappings manually using dropdown selectors
-- Green (🟢): High confidence (90%+)
-- Yellow (🟡): Medium confidence (70-89%)
-- Red (🔴): Low confidence (<70%)
+- Override mappings manually if needed
+- Confidence codes:
+  - 🟢 High (90%+)
+  - 🟡 Medium (70–89%)
+  - 🔴 Low (<70%)
 
 ### Step 3: Data Cleaning & Validation
-- Run automated data cleaning and validation
-- View before/after quality metrics
-- See visual charts showing improvement percentages
+- One-click cleaning and validation
+- View before/after metrics and improvement charts
 - Preview cleaned data sample
 
 ### Step 4: Targeted Fixes
-- Review remaining data quality issues
-- Apply suggested fixes for emails, phones, dates, etc.
-- Promote successful fixes to be remembered for future uploads
+- See remaining data quality issues
+- Apply suggestions (email domains, phone codes, invalid dates, etc.)
+- Promote successful fixes for future reuse
 
 ### Step 5: Final Report & Download
-- Review final data quality statistics
-- Download cleaned CSV file
-- View completeness metrics and quality charts
+- Review final statistics & completeness
+- Download cleaned CSV
+- Visualize field-level quality metrics
 
-## 🧠 Intelligent Features
+---
+
+## 🧠 System Design
+
+### Deterministic First
+The system **prioritizes deterministic transforms** (regex cleaning, parsing, normalization).  
+AI-like techniques (fuzzy string matching, typo correction) are used **only for targeted fixes** when deterministic rules cannot fully resolve issues.
 
 ### Header Mapping Algorithm
-The system uses multiple techniques to suggest header mappings:
+1. **Exact Match** (Confidence: 1.0)  
+2. **Promoted Aliases** (Confidence: 1.0)  
+3. **Common Aliases** (Confidence: 0.95)  
+4. **Token Overlap** (Confidence: 0.8–0.95)  
+5. **Fuzzy String Matching** (Confidence: 0.6–0.75)  
 
-1. **Exact Match** (Confidence: 1.0)
-2. **Promoted Aliases** (Confidence: 1.0) - Previously learned mappings
-3. **Common Aliases** (Confidence: 0.95) - Built-in domain knowledge
-4. **Token Overlap** (Confidence: 0.8-0.95) - Jaccard similarity on words
-5. **Fuzzy String Matching** (Confidence: 0.6-0.75) - Character-level similarity
-
-### Data Cleaning Functions
-- **Phone Numbers**: Normalize format, add country codes
-- **Email Addresses**: Lowercase, format validation
-- **Tax IDs/VAT**: Remove punctuation, uppercase
-- **Dates**: Parse and convert to ISO format (YYYY-MM-DD)
-- **Currency/Numbers**: Remove symbols, convert to float
-- **Postal Codes**: Extract alphanumeric characters
-- **URLs**: Add protocols, normalize format
-- **Text Fields**: Trim whitespace, title case
+### Cleaning Functions
+- **Phone Numbers**: Normalize format, add country codes  
+- **Emails**: Lowercase, fix domain typos  
+- **Tax IDs/VAT**: Remove punctuation, uppercase  
+- **Dates**: Parse and standardize to ISO format  
+- **Currency/Numbers**: Remove symbols, convert to float  
+- **Postal Codes**: Strip non-alphanumeric characters  
+- **Websites**: Add protocols if missing  
+- **Text Fields**: Trim whitespace, title case  
+- **Missing Values**:
+  - Numbers → `0`  
+  - Text → `"Unknown"`  
 
 ### Fix Suggestions
-The system identifies and suggests fixes for:
-- Email domain typos (gamil.com → gmail.com)
-- Missing phone country codes
-- Invalid date formats
-- Malformed URLs
-- Postal code formatting issues
+- Email domain corrections (`gamil.com → gmail.com`)  
+- Missing phone country codes  
+- Invalid date corrections  
+- Malformed URL fixes  
+- Postal code formatting  
 
 ### Learning & Memory
-- Successful fixes can be "promoted" to be automatically applied
-- Header aliases are remembered for future uploads
-- All learning data stored in `promoted_fixes.json`
+- Promoted fixes remembered in `promoted_fixes.json`  
+- Aliases auto-applied in future uploads  
+
+---
 
 ## 🧪 Testing
 
-Run the test suite:
+Run tests with:
 ```bash
-python -m pytest tests/ -v
+pytest tests/ -v
 ```
 
-Test coverage includes:
-- Header mapping algorithms
-- Data cleaning functions
-- Fix suggestion logic
-- Persistence operations
+Covers:
+- Header mapping logic  
+- Cleaning functions  
+- Fix suggestions  
+- Persistence  
+
+---
 
 ## 📋 Sample Data
 
-The application includes three sample datasets:
+- **Project6InputData1.csv**: Clean dataset  
+- **Project6InputData2.csv**: Messy headers & formats  
+- **Project6InputData3.csv**: Missing fields & nulls  
 
-1. **Project6InputData1.csv**: Clean data with standard headers
-2. **Project6InputData2.csv**: Messy headers and mixed formats
-3. **Project6InputData3.csv**: Missing fields, nulls, and invalid data
-
-## 🔧 Configuration
-
-### Canonical Schema
-Edit `schema/Project6StdFormat.csv` to modify the canonical schema. The system will automatically adapt to schema changes.
-
-### Promoted Fixes
-The `promoted_fixes.json` file stores learned mappings and fix rules:
-```json
-{
-  "header_aliases": {
-    "VAT#": "tax_id",
-    "Tel No.": "phone"
-  },
-  "fix_rules": [
-    {
-      "field": "email",
-      "rule_type": "domain_fix",
-      "original": "user@gamil.com",
-      "replacement": "user@gmail.com"
-    }
-  ]
-}
-```
-
-## 🚀 Production Deployment
-
-### Docker Deployment
-```dockerfile
-FROM python:3.9-slim
-
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-
-COPY . .
-EXPOSE 8501
-
-CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
-```
-
-### Environment Variables
-```bash
-export STREAMLIT_SERVER_PORT=8501
-export STREAMLIT_SERVER_ADDRESS=0.0.0.0
-```
-
-## 🛡️ Security Considerations
-
-- Input validation on all uploaded files
-- Secure file handling with pathlib
-- No execution of user-provided code
-- Sanitized data preview and display
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Add tests for new functionality
-4. Ensure all tests pass
-5. Submit a pull request
-
-## 📝 License
-
-This project is licensed under the MIT License.
-
-## 🆘 Troubleshooting
-
-### Common Issues
-
-**File Upload Error**: Ensure CSV files use UTF-8 encoding
-**Memory Issues**: Large files (>100MB) may require increased memory limits
-**Mapping Issues**: Check canonical schema format and field names
-
-### Logging
-The application uses Python logging. Set log level in code:
-```python
-import logging
-logging.basicConfig(level=logging.DEBUG)
-```
+---
 
 ## 📈 Performance
 
-- Handles CSV files up to 10,000 rows efficiently
-- Header mapping: O(n*m) where n=input headers, m=canonical fields
-- Data cleaning: O(n) where n=total cells
-- Memory usage: ~2x CSV file size
+- Efficient for CSVs up to **10,000 rows**  
+- Header mapping: **O(n × m)** (headers × schema fields)  
+- Cleaning: **O(n)** (cells)  
+- Memory usage: ~2× CSV file size  
+
+---
 
 ## 🔮 Future Enhancements
 
-- Machine learning-based data type detection
-- Integration with cloud storage (S3, GCS)
-- API endpoints for programmatic access
-- Bulk processing capabilities
-- Advanced analytics and reporting
-- Custom validation rules
+- ML-based data type detection  
+- Cloud storage integration (S3, GCS)  
+- API endpoints for programmatic access  
+- Bulk processing  
+- Custom validation rules  
+- Advanced analytics dashboard  
 
 ---
-For support or questions, please open an issue on the repository.
+
+For support or questions, please open an **issue** in this repository.  
