@@ -1,0 +1,527 @@
+{
+  "header_aliases": {},
+  "fix_rules": [
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "17/01/2025",
+      "replacement": "2025-01-17"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "25-Mar-2025",
+      "replacement": "2025-03-25"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "21/07/2025",
+      "replacement": "2025-07-21"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "30/04/2025",
+      "replacement": "2025-04-30"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "16-Jun-2025",
+      "replacement": "2025-06-16"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "24-Mar-2025",
+      "replacement": "2025-03-24"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "18-Apr-2025",
+      "replacement": "2025-04-18"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "23/07/2025",
+      "replacement": "2025-07-23"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "13-Apr-2025",
+      "replacement": "2025-04-13"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "26/06/2025",
+      "replacement": "2025-06-26"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "09-Jun-2025",
+      "replacement": "2025-06-09"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "21/06/2025",
+      "replacement": "2025-06-21"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "01/07/2025",
+      "replacement": "2025-01-07"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "26-Apr-2025",
+      "replacement": "2025-04-26"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "27-Feb-2025",
+      "replacement": "2025-02-27"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "17-Jun-2025",
+      "replacement": "2025-06-17"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "22/02/2025",
+      "replacement": "2025-02-22"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "19-Apr-2025",
+      "replacement": "2025-04-19"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "22-Apr-2025",
+      "replacement": "2025-04-22"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "12-Mar-2025",
+      "replacement": "2025-03-12"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "26-Aug-2025",
+      "replacement": "2025-08-26"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "17/07/2025",
+      "replacement": "2025-07-17"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "06-Feb-2025",
+      "replacement": "2025-02-06"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "22-Jan-2025",
+      "replacement": "2025-01-22"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "22-Jun-2025",
+      "replacement": "2025-06-22"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "09/03/2025",
+      "replacement": "2025-09-03"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "05/01/2025",
+      "replacement": "2025-05-01"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "24/08/2025",
+      "replacement": "2025-08-24"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "19/06/2025",
+      "replacement": "2025-06-19"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "28/01/2025",
+      "replacement": "2025-01-28"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "06/01/2025",
+      "replacement": "2025-06-01"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "09/02/2025",
+      "replacement": "2025-09-02"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "17-Jul-2025",
+      "replacement": "2025-07-17"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "22/07/2025",
+      "replacement": "2025-07-22"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "21/01/2025",
+      "replacement": "2025-01-21"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "12/03/2025",
+      "replacement": "2025-12-03"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "12/04/2025",
+      "replacement": "2025-12-04"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "10/06/2025",
+      "replacement": "2025-10-06"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "16/01/2025",
+      "replacement": "2025-01-16"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "23/06/2025",
+      "replacement": "2025-06-23"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "08/06/2025",
+      "replacement": "2025-08-06"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "02 Aug 2025",
+      "replacement": "2025-08-02"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "05 Aug 2025",
+      "replacement": "2025-08-05"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "16 Jul 2025",
+      "replacement": "2025-07-16"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "18 Apr 2025",
+      "replacement": "2025-04-18"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "27 May 2025",
+      "replacement": "2025-05-27"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "24 Jan 2025",
+      "replacement": "2025-01-24"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "16 Feb 2025",
+      "replacement": "2025-02-16"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "16 Aug 2025",
+      "replacement": "2025-08-16"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "10 Jun 2025",
+      "replacement": "2025-06-10"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "12 Jun 2025",
+      "replacement": "2025-06-12"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "23 Aug 2025",
+      "replacement": "2025-08-23"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "01 Mar 2025",
+      "replacement": "2025-03-01"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "22 Aug 2025",
+      "replacement": "2025-08-22"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "27 Jun 2025",
+      "replacement": "2025-06-27"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "26 Mar 2025",
+      "replacement": "2025-03-26"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "07 Feb 2025",
+      "replacement": "2025-02-07"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "02 Apr 2025",
+      "replacement": "2025-04-02"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "20 May 2025",
+      "replacement": "2025-05-20"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "08 Jul 2025",
+      "replacement": "2025-07-08"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "04 Aug 2025",
+      "replacement": "2025-08-04"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "28 Jun 2025",
+      "replacement": "2025-06-28"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "19 Apr 2025",
+      "replacement": "2025-04-19"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "14 Aug 2025",
+      "replacement": "2025-08-14"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "08 Aug 2025",
+      "replacement": "2025-08-08"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "27 Apr 2025",
+      "replacement": "2025-04-27"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "14 Apr 2025",
+      "replacement": "2025-04-14"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "29 Apr 2025",
+      "replacement": "2025-04-29"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "17 Apr 2025",
+      "replacement": "2025-04-17"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "06 Apr 2025",
+      "replacement": "2025-04-06"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "13 Jan 2025",
+      "replacement": "2025-01-13"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "01 Jan 2025",
+      "replacement": "2025-01-01"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "18 Jun 2025",
+      "replacement": "2025-06-18"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "23 Feb 2025",
+      "replacement": "2025-02-23"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "05 Mar 2025",
+      "replacement": "2025-03-05"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "21 Feb 2025",
+      "replacement": "2025-02-21"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "23 Jan 2025",
+      "replacement": "2025-01-23"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "23 Jul 2025",
+      "replacement": "2025-07-23"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "24 Mar 2025",
+      "replacement": "2025-03-24"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "20 Apr 2025",
+      "replacement": "2025-04-20"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "21 Apr 2025",
+      "replacement": "2025-04-21"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "07 Mar 2025",
+      "replacement": "2025-03-07"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "11 Apr 2025",
+      "replacement": "2025-04-11"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "12 Jan 2025",
+      "replacement": "2025-01-12"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "17 May 2025",
+      "replacement": "2025-05-17"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "12 Apr 2025",
+      "replacement": "2025-04-12"
+    },
+    {
+      "field": "order_date",
+      "rule": "date_format",
+      "original": "02 Jan 2025",
+      "replacement": "2025-01-02"
+    }
+  ]
+}
