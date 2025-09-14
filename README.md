@@ -2,7 +2,6 @@
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)  
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red)  
-![License](https://img.shields.io/badge/License-MIT-green)
 
 A production-ready **Streamlit application** that automatically maps messy CSV headers to a canonical schema and fixes data quality issues with intelligent suggestions and learning capabilities.
 
