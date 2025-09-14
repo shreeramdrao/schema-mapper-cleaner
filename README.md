@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)  
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-red)](https://schema-mapper-cleaner.streamlit.app/)
-![Original High Clarity Video Link](https://drive.google.com/file/d/1RQxjc-pwdztZF8ejnZkuq0UNsLivWkCL/view?usp=sharing )
+[Original High Clarity Video Link](https://drive.google.com/file/d/1RQxjc-pwdztZF8ejnZkuq0UNsLivWkCL/view?usp=sharing )
 
 A production-ready **Streamlit application** that automatically maps messy CSV headers to a canonical schema and fixes data quality issues with intelligent suggestions and learning capabilities.
 
